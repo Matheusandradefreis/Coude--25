@@ -71,7 +71,12 @@
 // $aluno1->setNota([10,10,9]);
 // $aluno1->exibirDados();
 // QUESTÃO 11 - NÃO CONSEGUI DIREITO
-// require_once('Array.php');
-// $aluno1 = new Grupo (['Matheus','João','Alexandre','Marcos','Morcego'],[22,25,27,28,32]);
-// $aluno1->exibirDados();
+require_once('Grupo.php');
+$aluno1 = new Grupo ('Matheus',22);
+$aluno2 = new Grupo ('Matheuss',24);
+$array = [$aluno1,$aluno2];
+foreach($array as $arrayss){
+    echo $arrayss;
+}
+// $array->exibirDados();
 // QUESTÃO 12

@@ -1,21 +1,24 @@
 <?php
 
 class Grupo {
-    private $nome = [];
-    private $idade= [];
+    private string $nome;
+    private int $idade;
  
     
     public function __construct($nome,$idade){
         $this->nome = $nome;
         $this->idade = $idade;
     }
+  
+    public function __toString(){
+        return $this->nome;
+    }
 
     public function exibirDados(){
         
-    foreach($this->nome as $nomes){
-        $nome = $this->nome[$nomes];  
+    
          echo 'O nome da Pessoa é: ' . $this->nome;
-    }
+    
        
     }
 }
